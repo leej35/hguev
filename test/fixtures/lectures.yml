@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  code: MyString
+  semester: 2014-02-25
+  professor: MyString
+  score: 1.5
+  gpa: 1.5
+  hard: 1.5
+
+two:
+  name: MyString
+  code: MyString
+  semester: 2014-02-25
+  professor: MyString
+  score: 1.5
+  gpa: 1.5
+  hard: 1.5

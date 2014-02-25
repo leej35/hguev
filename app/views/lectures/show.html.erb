@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<h1>
+  <b>수업명:</b>
+  <%= @lecture.name %>
+</h1>
+
+<p>
+  <b>Professor:</b>
+  <%= @lecture.professor %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%= @lecture.code %>
+</p>
+
+<p>
+  <b>Semester:</b>
+  <%= @lecture.semester %>
+</p>
+
+<h3>
+  <b>학점만족도:</b>
+  <%= number_with_precision(@lecture.gpa, precision: 2) %>
+
+<br>
+  <b>난이도:</b>
+  <%= number_with_precision(@lecture.hard, precision: 2) %>
+<br>
+  <b>평점:</b>
+  <%= number_with_precision(@lecture.score, precision: 2) %>
+</h3>
+
+<h2>다른 학우들의 평가</h2>
+<%= render @lecture.comments %>
+
+<h2>강의 평가하기</h2>
+<%= render "comments/form" %>
+
+
+
+<%= link_to 'Edit', edit_lecture_path(@lecture) %> |
+<%= link_to 'Back', lectures_path %>

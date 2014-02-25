@@ -1,0 +1,25 @@
+<p>
+  <b>글쓴이:</b>
+  <%= comment.commenter %>
+  <b>한마디:</b>
+  <%= comment.body %>
+</p>
+<div>
+	<span>
+	  <b>난이도:</b>
+	  <%= comment.hard %>
+	</span>
+	<span>
+	  <b>학점만족도:</b>
+	  <%= comment.gpa %>
+	</span>
+	<span>
+	  <b>평점:</b>
+	  <%= comment.score %>
+	</span>
+</div>
+<p>
+  <%= link_to 'Destroy Comment', [comment.lecture, comment],
+              :confirm => 'Are you sure?',
+              :method => :delete %>
+</p>              

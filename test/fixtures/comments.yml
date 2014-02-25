@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  commenter: MyString
+  body: MyText
+  score: 1.5
+  gpa: 1.5
+  hard: 1.5
+  lecture: 
+
+two:
+  commenter: MyString
+  body: MyText
+  score: 1.5
+  gpa: 1.5
+  hard: 1.5
+  lecture: 
